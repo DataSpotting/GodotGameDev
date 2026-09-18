@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="CharacterImportTest"
+config/name="CharacterImportRetargetTest"
 run/main_scene="res://start.tscn"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
