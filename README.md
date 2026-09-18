@@ -1,14 +1,14 @@
 # GodotGameDev
 
-The purpose of this repository is to strcture Godot game development learning for myself and keep a running history of various learning projects I'm doing. 
+The purpose of this repository is to structure Godot game development learning for myself and keep a running history of various learning projects I'm doing. 
 
 ## 🏫 Course List
-Below are the list of courses I plan on taking while building my skills set to make my first game: Defenders of Ba'hara (more details to come). These courses are not in any particular order, but I did start with Playable Workshop. Any other courses, videos, or articles I find will get included in the list below. 
+Below is the list of courses I am using to learn Godot game development and make my first game: Defenders of Ba'hara (more details to come). These courses are not in any particular order, but I did start with Playable Workshop. Any other courses, videos, or articles I find will get included in the list below. 
 
-* [ ] [How to make your first Video Game Playable Workshop](https://www.youtube.com/playlist?list=PLqc8_xgj1YwOzMo5slXfR3wXxYRxgnwun)
-* [ ] [Godot 4: Build a 2D Action-Adventure Game](https://gamedev.tv/courses/godot-2d-action-adventure) 
-* [ ] [Godot 4 C# Action Adventure: Build your own 2.5D RPG](https://gamedev.tv/courses/godot-c-action-adventure) 
-* [ ] [Complete Godot 3D: Code Your Own 3D Games In Godot 4!](https://gamedev.tv/courses/godot-complete-3d/welcome-to-the-course/5727)
+* [ ] **FREE** [How to make your first Video Game Playable Workshop](https://www.youtube.com/playlist?list=PLqc8_xgj1YwOzMo5slXfR3wXxYRxgnwun)
+* [ ] **PAID** [Godot 4: Build a 2D Action-Adventure Game](https://gamedev.tv/courses/godot-2d-action-adventure) 
+* [ ] **PAID** [Godot 4 C# Action Adventure: Build your own 2.5D RPG](https://gamedev.tv/courses/godot-c-action-adventure) 
+* [ ] **PAID** [Complete Godot 3D: Code Your Own 3D Games In Godot 4!](https://gamedev.tv/courses/godot-complete-3d/welcome-to-the-course/5727)
   
 
 ## 🗄️ Files Strcture
