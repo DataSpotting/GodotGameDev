@@ -34,7 +34,7 @@ light_color = Color(0.83137256, 0.70980394, 0, 1)
 shadow_enabled = true
 
 [node name="Floor" type="CSGBox3D" parent="." unique_id=219205438]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0046805143, 0.0075654387, 0.0073595047)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0036605597, -0.001447022, 0.006088376)
 size = Vector3(20, 0.5, 20)
 material = SubResource("StandardMaterial3D_1svla")
 
