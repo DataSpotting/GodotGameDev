@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://dwdqchuf8jswn"]
+
+[ext_resource type="Script" uid="uid://lrq272sigp80" path="res://player.gd" id="1_ots34"]
+[ext_resource type="PackedScene" uid="uid://cw7hq2ppns0iw" path="res://meshes/PesantTargetTest-BadRigging.glb" id="2_1n0d2"]
+[ext_resource type="AnimationLibrary" uid="uid://c0lmw0rhasjng" path="res://animations/UAL1_Standard.glb" id="3_1n0d2"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1svla"]
+sky_top_color = Color(0.2631282, 0.7139652, 0.9653955, 1)
+sky_horizon_color = Color(0.79009956, 0.89505875, 0.9489164, 1)
+ground_horizon_color = Color(0.79009956, 0.89505875, 0.9489164, 1)
+
+[sub_resource type="Sky" id="Sky_ots34"]
+sky_material = SubResource("ProceduralSkyMaterial_1svla")
+
+[sub_resource type="Environment" id="Environment_qn1rc"]
+background_mode = 2
+sky = SubResource("Sky_ots34")
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1svla"]
+albedo_color = Color(1.7423332e-05, 0.8351035, 0.20684567, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cjgyk"]
+size = Vector3(20, 0.5, 20)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cjgyk"]
+
+[node name="Node3D" type="Node3D" unique_id=1522475307]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=975263695]
+environment = SubResource("Environment_qn1rc")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1068838275]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_color = Color(0.83137256, 0.70980394, 0, 1)
+shadow_enabled = true
+
+[node name="Floor" type="CSGBox3D" parent="." unique_id=219205438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0085276365, 0.0014761686, 0.0023386478)
+size = Vector3(20, 0.5, 20)
+material = SubResource("StandardMaterial3D_1svla")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor" unique_id=451733679]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D" unique_id=1116614878]
+shape = SubResource("BoxShape3D_cjgyk")
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1029859988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2461877, 0)
+script = ExtResource("1_ots34")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=251682309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.051616073, -0.018137574, 0)
+shape = SubResource("CapsuleShape3D_cjgyk")
+
+[node name="PesantTargetTest-BadRigging" parent="Player/CollisionShape3D" unique_id=899704258 instance=ExtResource("2_1n0d2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.99754226, 0.0070073605)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/CollisionShape3D/PesantTargetTest-BadRigging" unique_id=824053745]
+libraries/UAL1_Standard = ExtResource("3_1n0d2")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=768756434]
+transform = Transform3D(1, 0, 0, 0, 0.99789566, -0.0648404, 0, 0.0648404, 0.99789566, 0, 1.7168875, 2.6370163)

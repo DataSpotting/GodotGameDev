@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cw7hq2ppns0iw"
-path="res://.godot/imported/PesantTargetTest.glb-21515be338fb9666dd099c600b06be9b.scn"
+path="res://.godot/imported/PesantTargetTest-BadRigging.glb-91073e858acf516b9f24dfd3cf7ba2f4.scn"
 
 [deps]
 
-source_file="res://meshes/PesantTargetTest.glb"
-dest_files=["res://.godot/imported/PesantTargetTest.glb-21515be338fb9666dd099c600b06be9b.scn"]
+source_file="res://meshes/PesantTargetTest-BadRigging.glb"
+dest_files=["res://.godot/imported/PesantTargetTest-BadRigging.glb-91073e858acf516b9f24dfd3cf7ba2f4.scn"]
 
 [params]
 
