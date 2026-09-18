@@ -12,14 +12,13 @@ Below are the list of courses I plan on taking while building my skills set to m
   
 
 ## 🗄️ Files Strcture
-Each course will exist in it's own dedicated workspace/storage folder in this repository so you can follow me in my journey. In addition to the courses, any "playing around" or "expirementing" work will also be added to it's own library under the experimental section. Hello phone was the first attempt at this, but I decided to continue to follow the Playable Workshop turtorial from that workspace. Not every project or expierment will get it's own dedicated readme, but I will do my best to ensure that the names themselves are intutitive.
+Each course will exist in it's own dedicated workspace/storage folder in this repository so you can follow me in my journey. In addition to the courses, any "playing around" or "experimenting" work will also be added to it's own library under the experimental section. Hello-Phone was the first attempt at this, but I decided to continue to follow the Playable Workshop tutorial from that workspace. Not every project or experiment will have its own dedicated README, but I'll ensure the names are intuitive.
 
 ## ⚖️ Legal: Assets, Gameworks, and Copyright
 
-Unless explictly stated otherwise, all assets within this repo are owned by their individual copyright owners and are not avaiable to be reused by any for any purpose other than to play the "games" made within. 
+Unless explicitly stated otherwise, all assets within this repo are owned by their individual copyright owners and are not avaiable to be reused by any for any purpose other than to play the "games" made within. 
 
-Should you wish to download and modify any "gameworks", defined as the ***packaged*** game code and assets, contained in this repo, you may do under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)license. 
+Should you wish to download and modify any "gameworks", defined as the ***packaged*** game code and assets, contained in this repo, you may do so under the [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en) license. 
 
-A detailed Liscensing page will be avaiable in the near future.
+A detailed licensing page will be available in the near future.
 
-![Alt txt](https://upload.wikimedia.org/wikipedia/commons/e/e5/CC_BY-SA_icon.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
