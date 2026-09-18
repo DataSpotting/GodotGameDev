@@ -16,20 +16,21 @@ script = ExtResource("1_v0iea")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.955752, 0)
 shape = SubResource("CapsuleShape3D_777ac")
 
-[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=1222560402]
+[node name="CameraRig" type="SpringArm3D" parent="." unique_id=1222560402]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.391, 0)
+top_level = true
 shape = SubResource("SphereShape3D_vgqql")
 spring_length = 1.6
 script = ExtResource("2_6t5aa")
 
-[node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=849499851]
+[node name="Camera3D" type="Camera3D" parent="CameraRig" unique_id=849499851]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.6)
 fov = 99.70115
 
 [node name="Mesh" parent="." unique_id=2006504105 instance=ExtResource("2_cvnsp")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.029823422, 0)
 
-[node name="Skeleton3D" parent="Mesh/Armature" parent_id_path=PackedInt32Array(2006504105, 1952510955) index="0" unique_id=1273642516]
+[node name="Skeleton3D" parent="Mesh/Armature" parent_id_path=PackedInt32Array(2006504105, 1183660831) index="0" unique_id=1322883336]
 bones/1/position = Vector3(0, 0.050100047, 0.9167)
 bones/1/rotation = Quaternion(0.7904686, 0, 0, 0.6125026)
 bones/3/rotation = Quaternion(-0.077279985, 0, 0, 0.99700946)
@@ -87,7 +88,7 @@ bones/61/rotation = Quaternion(0.036589734, -0.00013117323, -4.797519e-06, 0.999
 bones/62/rotation = Quaternion(-0.52907336, -0.0003280949, 0.0003434579, 0.84857595)
 bones/63/rotation = Quaternion(-0.00013717556, 0.9643068, -0.26478708, -0.00049942714)
 
-[node name="AnimationPlayer" parent="Mesh" index="1" unique_id=526724325]
+[node name="AnimationPlayer" parent="Mesh" index="1" unique_id=1862363059]
 autoplay = &"Idle"
 
 [editable path="Mesh"]
