@@ -4,7 +4,7 @@ The purpose of this repository is to strcture Godot game development learning fo
 
 In addition to the video turtorial, there are text based guides on their [website](https://playableworkshop.com) where you can download free assets to use to follow their guide as well
 
-## 🪜Turtorial Steps
+## 🪜 Turtorial Steps
 
 1. [x] Getting Started in Godot (Ep. 1)
 2. [x] Intro to Code (Ep. 2)
