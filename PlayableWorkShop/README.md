@@ -11,7 +11,7 @@ In addition to the video turtorial, there are text based guides on their [websit
 3. [x] Type-safety (Ep. 2.5)
 4. [x] Assets & Camera Setup (Ep. 3)
 5. [x] Fixing Player Movement (Ep. 4)
-6. [ ] Basic Animation (Ep. 5)
+6. [x] Basic Animation (Ep. 5)
 7. [ ] Complex Animation (Ep. 6)
 8. [ ] Audio Basics & Footstep Sounds (Ep. 7)
 9. [ ] State Machines (Ep. 8)

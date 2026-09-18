@@ -1,7 +1,7 @@
 extends CharacterBody3D
+@onready var ani_player: AnimationPlayer = $Mesh/AnimationPlayer
 
-
-const SPEED = 5.0
+const SPEED = 8.0
 const JUMP_VELOCITY = 4.5
 @onready var camera: Node3D = $CameraRig/Camera3D
 
@@ -28,6 +28,15 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	turn_to(direction)
+	
+	var current_speed := velocity.length()
+	
+	if current_speed > 4: 
+		ani_player.play("Sprint", 0.2)
+	elif current_speed > 0:
+		ani_player.play("Walk", 1.0, lerp(0.5, 1.25, current_speed/4))
+	else:
+		ani_player.play("Idle")
 
 func turn_to(direction: Vector3) -> void:
 	if direction:
