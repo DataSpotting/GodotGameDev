@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://dvmj03g2oux3o"]
 
 [ext_resource type="PackedScene" uid="uid://cjq00eka0eao" path="res://Scenes/player.tscn" id="1_og4jd"]
+[ext_resource type="Script" uid="uid://rn5fx8v0qck1" path="res://Scripts/worldsounds.gd" id="1_y4ycm"]
+[ext_resource type="AudioStream" uid="uid://67i7ay24wy65" path="res://Audio/Footsteps/stone_step_sounds.tres" id="2_1lxxj"]
+[ext_resource type="AudioStream" uid="uid://bw60rxqvuqaln" path="res://Audio/Music/village.mp3" id="2_nt0jr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_bupin"]
 sky_top_color = Color(0.20738944, 0.4549284, 0.73769456, 1)
@@ -32,17 +35,19 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="Floor" type="CSGBox3D" parent="." unique_id=1899181462]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030919489, -0.32451302, 0.062309634)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03269368, -0.33675843, 0.057113778)
 material_override = SubResource("StandardMaterial3D_777ac")
 size = Vector3(20, 0.5, 20)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Floor" unique_id=248148968]
+script = ExtResource("1_y4ycm")
+footstep_sounds = ExtResource("2_1lxxj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D" unique_id=1287415360]
 shape = SubResource("BoxShape3D_777ac")
 
 [node name="Player" parent="." unique_id=1160974612 instance=ExtResource("1_og4jd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07325852, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.016049385, 3.6463203, 0.009024143)
 
 [node name="VirtualJoystick" type="VirtualJoystick" parent="." unique_id=873995591]
 anchors_preset = -1
@@ -58,3 +63,8 @@ action_left = &"move_left"
 action_right = &"move_right"
 action_up = &"move_forward"
 action_down = &"move_backward"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=587881503]
+stream = ExtResource("2_nt0jr")
+autoplay = true
+bus = &"Music"
